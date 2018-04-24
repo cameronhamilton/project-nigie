@@ -1,16 +1,109 @@
- <mat-sidenav-container>
-  <mat-slider></mat-slider>
-  
-<mat-grid-list cols="3" gutterSize="16px">
-  <mat-grid-tile>
+<mat-toolbar color="primary">
+  <span>Nigie App</span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+  <div class="example-sidenav-content">
+    <button mat-button (click)="sidenav.open()">
+          Open Sidenav
+        </button>
+  </div>
+
+  <mat-sidenav #sidenav class="example-sidenav" mode="push" disableClose="true">
+
     <mat-card>
+      <mat-card-title>
+        Filters
+      </mat-card-title>
       <mat-card-content>
-        <img src="../assets/1.jpg"/>
+
+        <mat-list>
+          <mat-list-item>
+            <span>Streaming Service</span>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-list-item class="chips">
+              <mat-chip-list>
+                <mat-chip selectable="true">Netflix</mat-chip>
+                <mat-chip>Hulu</mat-chip>
+              </mat-chip-list>
+            </mat-list-item>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <span>Rating</span>
+          </mat-list-item>
+          <mat-list-item>
+            <mat-slider></mat-slider>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <span>Genres</span>
+          </mat-list-item>
+
+          <mat-list-item class="chips">
+            <mat-chip-list>
+              <mat-chip>Action</mat-chip>
+              <mat-chip>Horror</mat-chip>
+              <mat-chip>Comedy</mat-chip>
+              <mat-chip>Sci-Fi</mat-chip>
+              <mat-chip>Romaince</mat-chip>
+              <mat-chip>Thriller</mat-chip>
+              <mat-chip>Drama</mat-chip>
+              <mat-chip>Animation</mat-chip>
+            </mat-chip-list>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+          <mat-list-item><span>Year of Release</span></mat-list-item>
+
+          <mat-list-item>
+            <mat-slider></mat-slider>
+          </mat-list-item>
+
+          <mat-list-item class="chips">
+            <mat-chip-list>
+              <mat-chip>70s</mat-chip>
+              <mat-chip>80s</mat-chip>
+              <mat-chip>90s</mat-chip>
+              <mat-chip>2000s</mat-chip>
+              <mat-chip>2010s</mat-chip>
+            </mat-chip-list>
+          </mat-list-item>
+
+          <mat-divider></mat-divider>
+          <mat-list-item><span>Title Name</span></mat-list-item>
+
+          <mat-list-item>
+            <mat-form-field>
+              <input matInput placeholder="Title" type="text">
+            </mat-form-field>
+          </mat-list-item>
+        </mat-list>
       </mat-card-content>
     </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile><mat-card><img src="../assets/2.jpg"/></mat-card></mat-grid-tile>
-  <mat-grid-tile><mat-card><img src="../assets/3.jpg"/></mat-card></mat-grid-tile>
-  <mat-grid-tile><mat-card><img src="../assets/1.jpg"/></mat-card></mat-grid-tile>
-</mat-grid-list>
+  </mat-sidenav>
+
+
+  <mat-grid-list cols="3" gutterSize="16px">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-content>
+          <img src="../assets/1.jpg" />
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card><img src="../assets/2.jpg" /></mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card><img src="../assets/3.jpg" /></mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card><img src="../assets/1.jpg" /></mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
 </mat-sidenav-container>

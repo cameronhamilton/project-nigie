@@ -5,3 +5,17 @@ mat-slider {
 mat-card {
     padding: 0px;
 }
+
+.mat-sidenav-backdrop.mat-sidenav-shown{
+    background-color: transparent !important;
+}
+
+.chips {
+    max-width: 300px;
+    height: auto !important;
+}
+
+mat-chip {
+    margin-bottom: 5px !important;
+    margin-left: 0px !important;
+}
