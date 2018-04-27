@@ -1,5 +1,26 @@
+.toolbar {
+    padding-left: 0px !important;
+}
+
+.logo-image {
+    padding-right: 10px;
+}
+
+.logo-text {
+    font-size: 2em;
+}
+
+.menu-button {
+    height: 50px !important;
+    width: 50px !important;
+    min-width: 0px !important;
+    min-height: 0px !important;
+    padding: 0px;
+    margin-right: 10px !important;
+}
+
 mat-slider {
-  width: 300px;
+  width: 250px;
 }
 
 mat-card {
@@ -11,11 +32,17 @@ mat-card {
 }
 
 .chips {
-    max-width: 300px;
+    max-width: 250px;
     height: auto !important;
 }
 
 mat-chip {
     margin-bottom: 5px !important;
     margin-left: 0px !important;
+    margin-right: 5px !important;
+}
+
+.movie-card {
+    padding: 15px !important;
+    box-shadow: 12px 10px 13px 0px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12) !important;
 }

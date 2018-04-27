@@ -16,7 +16,7 @@ import {
   MatListModule,
   MatInputModule,
   MatAutocompleteModule,
-  MatFormFieldModule
+  MatFormFieldModule,
 } from '@angular/material';
 
 @NgModule({
@@ -34,7 +34,7 @@ import {
   MatListModule,
   MatInputModule,
   MatAutocompleteModule,
-  MatFormFieldModule
+  MatFormFieldModule,
   ],
   exports: [
     MatButtonModule,
@@ -50,7 +50,7 @@ import {
   MatListModule,
   MatInputModule,
   MatAutocompleteModule,
-  MatFormFieldModule
+  MatFormFieldModule,
   ]
 })
 export class MaterialModule {}
